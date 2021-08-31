@@ -13,7 +13,7 @@ def solution(people, limit):
 
         elif people[front] + people[back] <= limit:
             # 가장 무거운 사람과 가장 가벼운 사람의 무게 합이 limit 이하면 두 명씩 탈 수 있음
-            back -= 1 # b뒤 인덱스 앞당김
+            back -= 1 # 뒤 인덱스 앞당김
 
         front += 1 # 앞 인덱스 키움
         boat += 1  # 보트 개수 추가
