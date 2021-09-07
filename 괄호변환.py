@@ -41,7 +41,7 @@ def solution(sentence):
     if balance(uuu):
         vvv = solution(vvv)
         return uuu +vvv
-        # uuu 가 올바른 괄호 문자열이면 vvv 문자열에 대해서 재귀적으로 수행하고 해당 값을 uuu 의 뒤에 붙여 리턴
+        # uuu 가 올바른 괄호 문자열이면 vvv 문자열에 대해서 재귀적으로 수행하고 해당 값을 uuu 뒤에 붙여 리턴
     else:
         uuu = uuu[1:-1]
         uuu_change = ''
