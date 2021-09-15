@@ -23,7 +23,7 @@ def solution(enter, leave):
                 # leave 리스트의 순서대로 room 에서 퇴장
         except:
             return answer 
-        # 마지막은 out 의 범위가 len(leave) 를 벗어나므로 에러나 남, except 문에서 answer 를 리턴
+        # 마지막은 out 의 범위가 len(leave) 를 벗어나므로 에러가 남, except 문에서 answer 를 리턴
 
 enter = [1,4,2,3]
 leave = [2,1,4,3]
