@@ -37,4 +37,4 @@ def solution(orders, course):
 
 orders = ["XYZ", "XWY", "WXA"]
 course = [2,3,4]
-print(solution(orders, course))
+print(solution(orders, course)) # 정답 ['WX', 'XY']
