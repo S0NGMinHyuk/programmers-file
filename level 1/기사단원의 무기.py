@@ -7,7 +7,7 @@ def solution(number, limit, power):
             cnt = -1
         else:
             cnt = 0
-        # 코드 효율을 위해 제곱근까지만 반복
+        # 코드 효율을 위해 제곱근까지만 반복 
         for i in range(1, int(n**0.5) + 1):
             if n%i == 0:
                 cnt += 2
