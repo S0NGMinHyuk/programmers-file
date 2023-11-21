@@ -1,0 +1,23 @@
+def solution(s):
+    answer = 1
+
+    # 펠린드롬이 홀수일 경우
+    idx = 0                     # 펠린드롬의 중앙 인덱스
+    while idx < len(s):
+        spread = 1              # 중앙값에서 좌우 분산값
+        # length를 벗어나지 않고, 중앙 인덱스를 기준으로 좌우값이 같은 경우
+        while idx >= spread and idx+spread < len(s) and s[idx+spread] == s[idx-spread]:
+            answer = spread*2+1 if spread*2+1 > answer else answer  # answer 갱신
+            spread += 1
+        idx += 1
+
+    # 펠린드롬이 짝수인 경우
+    idx = 0
+    while idx < len(s)-1:
+        spread = 0
+        while idx >= spread and idx+spread+1 < len(s) and s[idx+spread+1] == s[idx-spread]:
+            answer = spread*2+2 if spread*2+2 > answer else answer
+            spread += 1
+        idx += 1
+
+    return answer
